@@ -15,6 +15,7 @@ contactRouter.get('/contactUs',(req,res,next)=>{
 
 contactRouter.post('/contactUs',(req,res,next)=>{
   console.log(req.body);
+  console.log("Handling '/contactUs' for post.",req.url,req.method);
   res.sendFile(path.join(rootDir,'views','contactSuccess.html'));
 });
 
